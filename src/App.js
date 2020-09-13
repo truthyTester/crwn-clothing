@@ -32,7 +32,6 @@ class App extends React.Component {
           setCurrentUser({
             id: snapShot.id,
             ...snapShot.data()
-            
           })
         })
       } 
@@ -82,4 +81,3 @@ const mapDispatchToApp = dispatch => ({
 export default connect(
   mapStateToProps, 
   mapDispatchToApp)(App);
-
